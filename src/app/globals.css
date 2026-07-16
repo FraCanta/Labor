@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #14758c;
+  --color-primary-dark: #07566b;
+  --color-accent: #d6b48d;
+  --color-surface: #f4eee7;
+  --color-ink: #283033;
+  --font-sans: "Inter", "Inter Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Montserrat", "Montserrat Fallback", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: clip;
+  background: #ffffff;
+  color: #283033;
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-underline-offset: 0.2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav,
+.font-heading {
+  font-family: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus-visible {
+  outline: 3px solid #d6b48d;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
