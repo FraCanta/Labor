@@ -41,14 +41,14 @@ export function ContactSection() {
           <div className="mt-8 flex w-full flex-col gap-4 sm:flex-row">
             <a
               href="tel:0802376085"
-              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-md bg-accent px-7 font-heading text-sm font-bold text-primary-dark transition-colors hover:bg-[#cba476] sm:w-auto sm:min-w-48"
+              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-md bg-accent px-7 font-heading text-sm font-bold uppercase tracking-[0.04em] text-primary-dark transition-colors hover:bg-[#cba476] sm:w-auto sm:min-w-48"
             >
               <Icon icon="lucide:phone" aria-hidden="true" className="text-lg" />
               Chiama ora
             </a>
             <a
               href="mailto:labor.giovinazzo@gmail.com"
-              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-md border-2 border-white px-7 font-heading text-sm font-bold text-white transition-colors hover:bg-white hover:text-primary-dark sm:w-auto sm:min-w-48"
+              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-md border-2 border-white px-7 font-heading text-sm font-bold uppercase tracking-[0.04em] text-white transition-colors hover:bg-white hover:text-primary-dark sm:w-auto sm:min-w-48"
             >
               <Icon icon="lucide:mail" aria-hidden="true" className="text-lg" />
               Invia un’email

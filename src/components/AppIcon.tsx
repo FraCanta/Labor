@@ -6,6 +6,7 @@ import calendarDays from "@iconify-icons/lucide/calendar-days";
 import checkCircle from "@iconify-icons/lucide/check-circle-2";
 import clock from "@iconify-icons/lucide/clock";
 import clockThree from "@iconify-icons/lucide/clock-3";
+import cookie from "@iconify-icons/lucide/cookie";
 import folderOpen from "@iconify-icons/lucide/folder-open";
 import handshake from "@iconify-icons/lucide/heart-handshake";
 import mail from "@iconify-icons/lucide/mail";
@@ -23,6 +24,7 @@ const localIcons = {
   "lucide:circle-check": checkCircle,
   "lucide:clock": clock,
   "lucide:clock-3": clockThree,
+  "lucide:cookie": cookie,
   "lucide:folder-open": folderOpen,
   "lucide:handshake": handshake,
   "lucide:mail": mail,

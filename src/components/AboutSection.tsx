@@ -1,4 +1,4 @@
-import { AppIcon as Icon } from "./AppIcon";
+import Image from "next/image";
 import { SectionShell } from "./SectionShell";
 
 export function AboutSection() {
@@ -11,13 +11,21 @@ export function AboutSection() {
             Un punto di riferimento per le tue pratiche
           </h2>
           <p className="mt-6 text-base leading-8 text-ink sm:text-lg">
-            Labor Giovinazzo offre assistenza per pratiche fiscali, previdenziali e assistenziali. Ti aiutiamo a comprendere ogni passaggio e a gestire la documentazione con maggiore semplicità.
+            Labor Giovinazzo offre assistenza per pratiche fiscali, previdenziali
+            <br />
+            e assistenziali. Ti aiutiamo a comprendere ogni passaggio e a gestire la documentazione con maggiore semplicità.
           </p>
         </div>
 
         <article className="flex min-h-72 flex-col items-center justify-center rounded-2xl bg-surface px-6 py-10 text-center shadow-[0_12px_36px_rgba(7,86,107,0.08)] sm:px-10">
-          <div className="flex size-24 items-center justify-center rounded-full border border-primary-dark/30 text-primary-dark" aria-hidden="true">
-            <Icon icon="lucide:user-round" className="text-5xl" />
+          <div className="relative size-36 overflow-hidden rounded-full border-4 border-white shadow-[0_8px_24px_rgba(7,86,107,0.16)] sm:size-40">
+            <Image
+              src="/marisa-cantale.png"
+              alt="Marisa Cantale, responsabile zonale di Labor Giovinazzo"
+              fill
+              sizes="160px"
+              className="object-cover object-[center_32%]"
+            />
           </div>
           <h3 className="mt-6 text-xl font-bold text-primary-dark sm:text-2xl">MARISA CANTALE</h3>
           <p className="mt-2 text-base leading-relaxed text-ink">

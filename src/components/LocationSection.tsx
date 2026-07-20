@@ -1,4 +1,5 @@
 import { AppIcon as Icon } from "./AppIcon";
+import { MapEmbed } from "./MapEmbed";
 import { SectionShell } from "./SectionShell";
 
 const openingHours = [
@@ -56,17 +57,16 @@ export function LocationSection() {
             <br />
             Giovinazzo (BA)
           </address>
+          <a
+            href="https://share.google/BXDvUmrR0k1ejFpcQ"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-3 inline-flex font-semibold text-primary-dark underline transition-colors hover:text-primary"
+          >
+            Visualizza su Google Business
+          </a>
 
-          <div className="mt-6 aspect-[16/10] w-full overflow-hidden rounded-xl bg-primary/10 sm:aspect-video">
-            <iframe
-              title="Mappa della sede LABOR a Giovinazzo"
-              src="https://www.google.com/maps?q=Via%20Marconi%2095%2C%20Giovinazzo%20BA&output=embed"
-              className="h-full w-full border-0"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
-            />
-          </div>
+          <MapEmbed />
         </section>
       </div>
     </SectionShell>

@@ -18,6 +18,11 @@ const localBusinessSchema = {
     "Assistenza fiscale, previdenziale e pratiche CAF e Patronato a Giovinazzo.",
   url: "https://laborpatronatoecafgiovinazzo.vercel.app/",
   image: "https://laborpatronatoecafgiovinazzo.vercel.app/labor-logo.jpg",
+  hasMap: "https://share.google/BXDvUmrR0k1ejFpcQ",
+  sameAs: [
+    "https://share.google/BXDvUmrR0k1ejFpcQ",
+    "https://www.facebook.com/caflaborgiovinazzo/?locale=it_IT",
+  ],
   telephone: "+39 080 237 6085",
   email: "labor.giovinazzo@gmail.com",
   address: {

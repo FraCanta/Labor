@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
+import { CookieConsentProvider } from "@/components/CookieConsent";
 import "./globals.css";
 
 const siteUrl = "https://laborpatronatoecafgiovinazzo.vercel.app";
@@ -62,6 +63,9 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
+  verification: {
+    google: "x7-icM4iLOe7_4q-TNQ4hSRw1ZGj-TCz2YfooNVGvxg",
+  },
   appleWebApp: {
     capable: true,
     title: "Labor - Patronato e CAF",
@@ -72,7 +76,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="it" className={`${inter.variable} ${montserrat.variable}`}>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <CookieConsentProvider>{children}</CookieConsentProvider>
+      </body>
     </html>
   );
 }
