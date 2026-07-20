@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Script from "next/script";
 import { useCookieConsent } from "./CookieConsent";
+import { SectionShell } from "./SectionShell";
 
 const facebookPageUrl =
   "https://www.facebook.com/caflaborgiovinazzo/?locale=it_IT";
@@ -11,7 +12,7 @@ export function FacebookFeedSection() {
   const { status, acceptCookies } = useCookieConsent();
 
   return (
-    <div className="bg-primary-light py-16 sm:py-20 lg:py-24">
+    <SectionShell id="facebook-feed" className="bg-primary/5">
       <div className="text-center">
         <span
           className="mx-auto mb-5 block h-0.5 w-12 bg-accent"
@@ -75,6 +76,6 @@ export function FacebookFeedSection() {
           </div>
         )}
       </div>
-    </div>
+    </SectionShell>
   );
 }
