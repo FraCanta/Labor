@@ -1,6 +1,7 @@
 import {
   AboutSection,
   ContactSection,
+  FacebookFeedSection,
   Footer,
   Header,
   Hero,
@@ -46,7 +47,7 @@ const localBusinessSchema = {
     {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "09:30",
+      opens: "09:00",
       closes: "13:00",
     },
     {
@@ -73,8 +74,10 @@ export default function HomePage() {
         <AboutSection />
         <ServicesSection />
         <ProcessSection />
+
         <LocationSection />
         <ContactSection />
+        <FacebookFeedSection />
       </main>
       <Footer />
     </>

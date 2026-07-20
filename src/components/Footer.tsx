@@ -1,4 +1,5 @@
 import { AppIcon as Icon } from "./AppIcon";
+import Image from "next/image";
 import Link from "next/link";
 import { CookiePreferencesButton } from "./CookieConsent";
 import { CurrentYear } from "./CurrentYear";
@@ -8,11 +9,14 @@ export function Footer() {
     <footer className="w-full bg-primary-dark text-white">
       <div className="mx-auto grid w-full max-w-[1200px] gap-10 px-5 py-12 sm:px-8 lg:grid-cols-[0.8fr_1.3fr_0.9fr] lg:gap-12 lg:px-10 lg:py-14">
         <div>
-          <Link href="/" className="inline-flex flex-col" aria-label="LABOR Patronato e CAF, torna alla home">
-            <span className="font-heading text-3xl font-extrabold leading-none tracking-tight">LABOR</span>
-            <span className="mt-2 border-t-2 border-accent pt-2 text-[0.65rem] font-bold tracking-[0.18em]">
-              PATRONATO e CAF
-            </span>
+          <Link href="/" className="inline-flex" aria-label="LABOR Patronato e CAF, torna alla home">
+            <Image
+              src="/logo-positivo.svg"
+              alt="LABOR Patronato e CAF"
+              width={2048}
+              height={2048}
+              className="h-24 w-52 object-cover object-center sm:h-28 sm:w-60"
+            />
           </Link>
         </div>
 
@@ -59,7 +63,7 @@ export function Footer() {
 
       <div className="bg-accent px-5 py-4 text-center text-sm font-medium text-ink">
         <div className="mx-auto flex max-w-[1200px] flex-col items-center justify-center gap-2 sm:flex-row sm:gap-3">
-          <p>© <CurrentYear /> Labor Patronato e CAF – Tutti i diritti riservati</p>
+          <p>© <CurrentYear /> Labor Patronato e CAF</p>
           <span className="hidden sm:inline" aria-hidden="true">•</span>
           <p>
             Sito realizzato da{" "}

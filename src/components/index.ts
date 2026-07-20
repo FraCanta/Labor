@@ -1,6 +1,7 @@
 export { AboutSection } from "./AboutSection";
 export { ContactSection } from "./ContactSection";
 export { Footer } from "./Footer";
+export { FacebookFeedSection } from "./FacebookFeedSection";
 export { Header } from "./Header";
 export { Hero } from "./Hero";
 export { LocationSection } from "./LocationSection";

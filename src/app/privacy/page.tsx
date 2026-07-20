@@ -24,6 +24,7 @@ export default function PrivacyPage() {
         <li>Dati tecnici di navigazione, come indirizzo IP, data e ora della richiesta, browser, dispositivo e risorse richieste.</li>
         <li>Dati forniti volontariamente quando l’utente contatta Labor tramite telefono o posta elettronica.</li>
         <li>Dati trasmessi a Google solo se l’utente sceglie di caricare la mappa incorporata.</li>
+        <li>Dati trasmessi a Elfsight e Meta solo se l’utente acconsente al caricamento del feed Facebook.</li>
       </ul>
       <p>Il sito non contiene moduli e non raccoglie direttamente documenti fiscali, previdenziali o sanitari.</p>
 
@@ -34,6 +35,7 @@ export default function PrivacyPage() {
         <li>Adempiere a obblighi normativi o richieste dell’autorità: obbligo legale.</li>
         <li>Misurare in forma aggregata l’utilizzo del sito tramite Google Analytics: consenso espresso mediante il banner.</li>
         <li>Caricare Google Maps: consenso espresso mediante il banner o il pulsante dedicato.</li>
+        <li>Caricare il feed Facebook tramite Elfsight: consenso espresso mediante il banner o il pulsante dedicato.</li>
       </ul>
 
       <h2>4. Modalità del trattamento e conservazione</h2>
@@ -43,7 +45,7 @@ export default function PrivacyPage() {
 
       <h2>5. Destinatari e fornitori</h2>
       <p>
-        I dati possono essere trattati da fornitori tecnici strettamente necessari, tra cui Vercel per hosting e distribuzione del sito, provider di posta elettronica e telecomunicazioni e, solo dopo scelta dell’utente, Google per Analytics e per la mappa. Tali soggetti operano secondo i rispettivi ruoli e condizioni privacy.
+        I dati possono essere trattati da fornitori tecnici strettamente necessari, tra cui Vercel per hosting e distribuzione del sito, provider di posta elettronica e telecomunicazioni e, solo dopo scelta dell’utente, Google per Analytics e per la mappa, Elfsight per il widget e Meta per i contenuti Facebook. Tali soggetti operano secondo i rispettivi ruoli e condizioni privacy.
       </p>
 
       <h2>6. Trasferimenti fuori dallo Spazio Economico Europeo</h2>
