@@ -32,6 +32,7 @@ export default function PrivacyPage() {
         <li>Fornire il sito, garantirne sicurezza e corretto funzionamento: legittimo interesse del titolare.</li>
         <li>Rispondere a richieste di informazioni o appuntamento: esecuzione di misure precontrattuali richieste dall’interessato.</li>
         <li>Adempiere a obblighi normativi o richieste dell’autorità: obbligo legale.</li>
+        <li>Misurare in forma aggregata l’utilizzo del sito tramite Google Analytics: consenso espresso mediante il banner.</li>
         <li>Caricare Google Maps: consenso espresso mediante il banner o il pulsante dedicato.</li>
       </ul>
 
@@ -42,7 +43,7 @@ export default function PrivacyPage() {
 
       <h2>5. Destinatari e fornitori</h2>
       <p>
-        I dati possono essere trattati da fornitori tecnici strettamente necessari, tra cui Vercel per hosting e distribuzione del sito, provider di posta elettronica e telecomunicazioni e, solo dopo scelta dell’utente, Google per la mappa. Tali soggetti operano secondo i rispettivi ruoli e condizioni privacy.
+        I dati possono essere trattati da fornitori tecnici strettamente necessari, tra cui Vercel per hosting e distribuzione del sito, provider di posta elettronica e telecomunicazioni e, solo dopo scelta dell’utente, Google per Analytics e per la mappa. Tali soggetti operano secondo i rispettivi ruoli e condizioni privacy.
       </p>
 
       <h2>6. Trasferimenti fuori dallo Spazio Economico Europeo</h2>

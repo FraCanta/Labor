@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { createContext, useContext, useSyncExternalStore, type ReactNode } from "react";
 import { AppIcon as Icon } from "./AppIcon";
+import { GoogleAnalytics } from "./GoogleAnalytics";
 
 type ConsentStatus = "accepted" | "rejected" | null;
 
@@ -55,6 +56,7 @@ export function CookieConsentProvider({ children }: { children: ReactNode }) {
   return (
     <CookieConsentContext.Provider value={contextValue}>
       {children}
+      <GoogleAnalytics enabled={status === "accepted"} />
       {status === null ? <CookieBanner /> : <FloatingCookieButton />}
     </CookieConsentContext.Provider>
   );
@@ -90,7 +92,7 @@ function CookieBanner() {
         <div>
           <h2 id="cookie-banner-title" className="text-lg font-bold sm:text-xl">Preferenze cookie</h2>
           <p id="cookie-banner-description" className="mt-2 max-w-2xl text-sm leading-6 text-white/90">
-            Il sito usa strumenti tecnici necessari. Con il tuo consenso può caricare Google Maps, che potrebbe utilizzare cookie di terze parti.
+            Il sito usa strumenti tecnici necessari. Con il tuo consenso può attivare Google Analytics e caricare Google Maps, che potrebbero utilizzare cookie di terze parti.
           </p>
           <Link href="/cookie-policy" className="mt-2 inline-flex text-sm font-semibold text-accent underline hover:text-white">
             Leggi la Cookie Policy
