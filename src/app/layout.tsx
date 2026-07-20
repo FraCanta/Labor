@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
+import Script from "next/script";
 import { CookieConsentProvider } from "@/components/CookieConsent";
 import "./globals.css";
 
@@ -76,6 +77,35 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="it" className={`${inter.variable} ${montserrat.variable}`}>
+      <head>
+        <Script id="google-consent-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('consent', 'default', {
+              analytics_storage: 'denied',
+              ad_storage: 'denied',
+              ad_user_data: 'denied',
+              ad_personalization: 'denied',
+              wait_for_update: 500
+            });
+          `}
+        </Script>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-4G02GC7J5B"
+          strategy="beforeInteractive"
+        />
+        <Script id="google-analytics-config" strategy="beforeInteractive">
+          {`
+            gtag('js', new Date());
+            gtag('config', 'G-4G02GC7J5B', {
+              anonymize_ip: true,
+              send_page_view: false
+            });
+          `}
+        </Script>
+      </head>
       <body className="antialiased">
         <CookieConsentProvider>{children}</CookieConsentProvider>
       </body>

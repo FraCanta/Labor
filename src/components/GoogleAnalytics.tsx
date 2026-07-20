@@ -1,32 +1,32 @@
 "use client";
 
-import Script from "next/script";
 import { useEffect } from "react";
 
 const measurementId = "G-4G02GC7J5B";
-const disableKey = `ga-disable-${measurementId}`;
+
+type GoogleTagWindow = Window & {
+  gtag?: (...args: unknown[]) => void;
+};
 
 export function GoogleAnalytics({ enabled }: { enabled: boolean }) {
   useEffect(() => {
-    Object.assign(window, { [disableKey]: !enabled });
+    const gtag = (window as GoogleTagWindow).gtag;
+    if (!gtag) return;
+
+    gtag("consent", "update", {
+      analytics_storage: enabled ? "granted" : "denied",
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied",
+    });
+
+    if (enabled) {
+      gtag("config", measurementId, {
+        anonymize_ip: true,
+        send_page_view: true,
+      });
+    }
   }, [enabled]);
 
-  if (!enabled) return null;
-
-  return (
-    <>
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${measurementId}', { anonymize_ip: true });
-        `}
-      </Script>
-    </>
-  );
+  return null;
 }
