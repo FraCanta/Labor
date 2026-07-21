@@ -60,6 +60,35 @@ export function ServicesSection() {
           </article>
         ))}
       </div>
+
+      <article className="mt-12 rounded-2xl border border-accent/70 bg-white p-6 shadow-[0_12px_32px_rgba(7,86,107,0.07)] sm:p-8 lg:mt-14 lg:flex lg:items-center lg:gap-8 lg:p-10">
+        <span
+          className="flex size-14 shrink-0 items-center justify-center rounded-full bg-primary text-white"
+          aria-hidden="true"
+        >
+          <Icon icon="lucide:scale" className="text-3xl" />
+        </span>
+
+        <div className="mt-5 min-w-0 flex-1 lg:mt-0">
+          <span className="inline-flex rounded-full bg-accent/25 px-3 py-1 font-heading text-xs font-bold uppercase tracking-[0.08em] text-primary-dark">
+            Su appuntamento
+          </span>
+          <h3 className="mt-3 text-xl font-bold uppercase leading-tight text-primary-dark sm:text-2xl">
+            Consulenza legale su appuntamento
+          </h3>
+          <p className="mt-3 max-w-2xl text-base leading-7 text-ink">
+            Ricevi assistenza legale direttamente presso la nostra sede, con un professionista disponibile a valutare ogni esigenza in modo riservato e professionale.
+          </p>
+        </div>
+
+        <a
+          href="tel:0802376085"
+          className="mt-7 inline-flex min-h-12 w-full shrink-0 items-center justify-center rounded-md bg-accent px-7 font-heading text-sm font-bold uppercase tracking-[0.04em] text-primary-dark transition-colors hover:bg-[#cba476] lg:mt-0 lg:w-auto"
+          aria-label="Chiama per fissare un appuntamento per la consulenza legale"
+        >
+          Fissa un appuntamento
+        </a>
+      </article>
     </SectionShell>
   );
 }

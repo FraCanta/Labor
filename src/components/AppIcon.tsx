@@ -14,6 +14,7 @@ import mapPin from "@iconify-icons/lucide/map-pin";
 import menu from "@iconify-icons/lucide/menu";
 import phone from "@iconify-icons/lucide/phone";
 import phoneCall from "@iconify-icons/lucide/phone-call";
+import scale from "@iconify-icons/lucide/scale";
 import user from "@iconify-icons/lucide/user";
 import users from "@iconify-icons/lucide/users";
 import close from "@iconify-icons/lucide/x";
@@ -32,6 +33,7 @@ const localIcons = {
   "lucide:menu": menu,
   "lucide:phone": phone,
   "lucide:phone-call": phoneCall,
+  "lucide:scale": scale,
   "lucide:user-round": user,
   "lucide:users-round": users,
   "lucide:x": close,
